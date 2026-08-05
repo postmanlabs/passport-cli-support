@@ -1,114 +1,76 @@
 name: Bug Report
-description: Report a bug or unexpected behavior in the Passport CLI
+description: Report a bug or unexpected behavior in the Passport CLI.
 title: "[Bug]: "
 labels: ["bug"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Is there an existing issue for this?
-
-        Please search to see if an issue already exists for the issue you encountered. Duplicate issues will be closed. [Github Issue Tracker](https://github.com/postmanlabs/passport-cli-support/issues)
-
-  - type: checkboxes
-    id: existing-issue
-    attributes:
-      label: Is there an existing issue for this?
-      description: Please search to see if an issue already exists for the issue you encountered. Duplicate issues will be closed. [Github Issue Tracker](https://github.com/postmanlabs/passport-cli-support/issues)
-      options:
-        - label: I have searched the tracker for existing similar issues and I know that duplicates will be closed.
-          required: true
-
-  - type: checkboxes
-    id: preflight
-    attributes:
-      label: Preflight checklist
-      options:
-        - label: This issue is about the Passport CLI (not the Postman App or Web platform).
-          required: true
-
-  - type: textarea
-    id: description
-    attributes:
-      label: Describe the bug
-      description: A clear and concise description of what the bug is.
-      placeholder: When I run `postman ...`, I expected X but got Y.
-    validations:
+- type: checkboxes
+  attributes:
+    label: Is there an existing issue for this?
+    description: Please search to see if an issue already exists for the issue you encountered. Duplicate issues will be closed. [Github Issue Tracker](https://github.com/postmanlabs/passport-cli-support/issues)
+    options:
+    - label: I have searched the tracker for existing similar issues and I know that duplicates will be closed
       required: true
-
-  - type: textarea
-    id: reproduce
-    attributes:
-      label: Steps to reproduce
-      description: Provide the full steps and the exact command(s) to reproduce the problem.
-      placeholder: |
-        1. Run `postman ...`
-        2. Enter '...'
-        3. See error
-    validations:
+    - label: This issue is about the Passport CLI (not the Postman App or Web platform)
       required: true
-
-  - type: input
-    id: cli-version
-    attributes:
-      label: Passport CLI version
-      description: Output of `passport --version`.
-      placeholder: e.g. 1.2.3
-    validations:
-      required: true
-
-  - type: dropdown
-    id: os
-    attributes:
-      label: Operating System
-      options:
-        - macOS
-        - Windows
-        - Linux
-        - Other
-    validations:
-      required: true
-
-  - type: input
-    id: os-version
-    attributes:
-      label: OS version
-      placeholder: e.g. macOS 14.5, Ubuntu 22.04, Windows 11
-    validations:
-      required: true
-
-  - type: dropdown
-    id: frequency
-    attributes:
-      label: Is the bug reproducible every time?
-      options:
-        - Every time
-        - Occasionally / intermittently
-        - Only once
-    validations:
-      required: true
-
-  - type: textarea
-    id: logs
-    attributes:
-      label: Logs / debug output
-      description: Re-run the command with verbose/debug output enabled and paste any relevant logs here.
-      render: shell
-    validations:
-      required: false
-
-  - type: textarea
-    id: screenshots
-    attributes:
-      label: Screenshots or Videos
-      description: If applicable, add screenshots or a short screen recording to help explain the problem. You can drag and drop files directly into this field.
-    validations:
-      required: false
-
-  - type: textarea
-    id: additional
-    attributes:
-      label: Additional context
-      description: Add any other context or (redacted) config snippets about the problem here.
-    validations:
-      required: false
+- type: textarea
+  attributes:
+    label: Describe the Issue
+    description: |
+      A high-level summary or description of the problem that you're facing.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Steps To Reproduce
+    description: A list of steps that can be followed to recreate the issue.
+    placeholder: |
+      1. Run `passport ...`
+      2. Enter '...'
+      3. See error message...
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: '> **Tip**: You can attach images and recordings to textareas by dragging in the files. More visual examples will help us to understand the issue.'
+- type: textarea
+  attributes:
+    label: Screenshots or Videos
+    description: |
+      If applicable, please include screenshots or a short video to help visually explain the problem.
+      Ensure that the screenshots/videos do not contain any sensitive information such as API keys or Access Tokens.
+  validations:
+    required: false
+- type: dropdown
+  attributes:
+    label: Operating System
+    description: Which OS are you using?
+    options:
+      - Windows
+      - macOS
+      - Linux
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: Passport CLI Version
+    description: Which version of the CLI are you using? This can be found by running `passport --version`.
+    placeholder: "1.2.3"
+  validations:
+    required: true
+- type: dropdown
+  attributes:
+    label: User Account Type
+    description: Are you using the Passport CLI as a signed in or signed out user?
+    options:
+      - Signed In User
+      - Signed Out User
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Additional Context?
+    description: |
+      Please add any other contextual information about the problem, that might be relevant and help explain the issue you're facing.
+      You can attach log files or (redacted) config snippets by clicking this area to highlight it and then dragging files in.
+  validations:
+    required: false
