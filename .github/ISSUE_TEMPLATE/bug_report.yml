@@ -1,0 +1,119 @@
+name: 🐛 Bug Report
+description: Report a bug or unexpected behavior in the Passport CLI
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug report! 🙏
+
+        Before submitting, please [search the existing issues](https://github.com/postmanlabs/passport-cli-support/issues) to check whether your problem has already been reported. If you find a matching issue, add a 👍 reaction or a comment instead of opening a new one.
+
+        > For **account or billing** queries, use the [support page](https://www.postman.com/support/).
+        > For **security vulnerabilities**, follow our [security policy](https://www.postman.com/vulnerability-reporting) — do **not** open a public issue.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Preflight checklist
+      options:
+        - label: I have searched the existing issues and this is not a duplicate.
+          required: true
+        - label: This issue is about the Passport CLI (not the Postman App or Web platform).
+          required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+      placeholder: When I run `postman ...`, I expected X but got Y.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Provide the full steps and the exact command(s) to reproduce the problem.
+      placeholder: |
+        1. Run `postman ...`
+        2. Enter '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior / command output
+      description: What actually happened? Paste the full command output and any error messages.
+      render: shell
+    validations:
+      required: true
+
+  - type: input
+    id: cli-version
+    attributes:
+      label: Passport CLI version
+      description: Output of `passport --version`.
+      placeholder: e.g. 1.2.3
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      options:
+        - macOS
+        - Windows
+        - Linux
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version
+      placeholder: e.g. macOS 14.5, Ubuntu 22.04, Windows 11
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Is the bug reproducible every time?
+      options:
+        - Every time
+        - Occasionally / intermittently
+        - Only once
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / debug output
+      description: Re-run the command with verbose/debug output enabled and paste any relevant logs here.
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add any other context, screenshots, or (redacted) config snippets about the problem here.
+    validations:
+      required: false
