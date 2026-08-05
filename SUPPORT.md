@@ -1,4 +1,4 @@
-# Troubleshooting
+# Support & Troubleshooting
 
 This guide covers the most common issues you may run into while using the **Passport CLI**, along with steps to diagnose and resolve them. If your problem isn't listed here, please [search the issue tracker](https://github.com/postmanlabs/passport-cli-support/issues) or [open a new issue](https://github.com/postmanlabs/passport-cli-support/issues/new/choose) following our [reporting guidelines](./CONTRIBUTING.md).
 
