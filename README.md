@@ -27,10 +27,6 @@ Sign in using your Postman account to participate in the discussions. Don’t wa
 
 If you are looking for more information regarding features, installation, and usage of the Passport CLI, head over to the <a target="_blank" href="https://learning.postman.com/">documentation section on our website</a>. You can also have a look at our blog at <a target="_blank" href="https://blog.postman.com">https://blog.postman.com</a> for interesting tutorials, development stories, and platform updates.
 
-# We are hiring!
-
-Want to help us solve [these issues](https://github.com/postmanlabs/passport-cli-support/issues)? [We are hiring](https://www.postman.com/company/careers/) engineers! Postman is the world’s leading API platform, used by more than 45 million developers and 500,000 organizations, including 98% of the Fortune 500. We are working hard to meet the expectations of the Postman community. If you want to build something amazing with us, [reach out](https://www.postman.com/company/careers/)!
-
 ## About Postman
 
 Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.
