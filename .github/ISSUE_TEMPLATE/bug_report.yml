@@ -1,4 +1,4 @@
-name: 🐛 Bug Report
+name: Bug Report
 description: Report a bug or unexpected behavior in the Passport CLI
 title: "[Bug]: "
 labels: ["bug"]
@@ -6,20 +6,24 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to file a bug report! 🙏
+        Is there an existing issue for this?
 
-        Before submitting, please [search the existing issues](https://github.com/postmanlabs/passport-cli-support/issues) to check whether your problem has already been reported. If you find a matching issue, add a 👍 reaction or a comment instead of opening a new one.
+        Please search to see if an issue already exists for the issue you encountered. Duplicate issues will be closed. [Github Issue Tracker](https://github.com/postmanlabs/passport-cli-support/issues)
 
-        > For **account or billing** queries, use the [support page](https://www.postman.com/support/).
-        > For **security vulnerabilities**, follow our [security policy](https://www.postman.com/vulnerability-reporting) — do **not** open a public issue.
+  - type: checkboxes
+    id: existing-issue
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the issue you encountered. Duplicate issues will be closed. [Github Issue Tracker](https://github.com/postmanlabs/passport-cli-support/issues)
+      options:
+        - label: I have searched the tracker for existing similar issues and I know that duplicates will be closed.
+          required: true
 
   - type: checkboxes
     id: preflight
     attributes:
       label: Preflight checklist
       options:
-        - label: I have searched the existing issues and this is not a duplicate.
-          required: true
         - label: This issue is about the Passport CLI (not the Postman App or Web platform).
           required: true
 
@@ -41,23 +45,6 @@ body:
         1. Run `postman ...`
         2. Enter '...'
         3. See error
-    validations:
-      required: true
-
-  - type: textarea
-    id: expected
-    attributes:
-      label: Expected behavior
-      description: What did you expect to happen?
-    validations:
-      required: true
-
-  - type: textarea
-    id: actual
-    attributes:
-      label: Actual behavior / command output
-      description: What actually happened? Paste the full command output and any error messages.
-      render: shell
     validations:
       required: true
 
@@ -111,9 +98,17 @@ body:
       required: false
 
   - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Videos
+      description: If applicable, add screenshots or a short screen recording to help explain the problem. You can drag and drop files directly into this field.
+    validations:
+      required: false
+
+  - type: textarea
     id: additional
     attributes:
       label: Additional context
-      description: Add any other context, screenshots, or (redacted) config snippets about the problem here.
+      description: Add any other context or (redacted) config snippets about the problem here.
     validations:
       required: false
