@@ -1,5 +1,3 @@
-_Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster._
-
 # Passport CLI Support
 
 If you have a feature request, a new integration idea, or you would like to file a bug report for the **Passport CLI**, please use this [Github issue tracker](https://github.com/postmanlabs/passport-cli-support/issues).
