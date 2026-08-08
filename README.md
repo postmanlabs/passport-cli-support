@@ -22,7 +22,7 @@ Sign in using your Postman account to participate in the discussions. Don’t wa
 
 ### Documentation and Tutorials
 
-If you are looking for more information regarding features, installation, and usage of the Passport CLI, head over to the <a target="_blank" href="https://learning.postman.com/">documentation section on our website</a>. You can also have a look at our blog at <a target="_blank" href="https://blog.postman.com">https://blog.postman.com</a> for interesting tutorials, development stories, and platform updates.
+If you are looking for more information regarding features, installation, and usage of the Passport CLI, head over to the <a target="_blank" href="https://learning.postman.com/docs/postman-passport/passport-cli/overview">documentation section on our website</a>. You can also have a look at our blog at <a target="_blank" href="https://blog.postman.com">https://blog.postman.com</a> for interesting tutorials, development stories, and platform updates.
 
 ## About Postman
 
